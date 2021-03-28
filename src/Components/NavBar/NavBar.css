@@ -1,0 +1,39 @@
+.navbar {
+    background-color: #222;
+    padding: 1.5rem;
+    height: 2rem;
+    box-shadow: 5px 5px 5px lightgrey;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-title {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.link-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.links {
+    position: relative;
+    /* margin-right: 50px; */
+    padding-left: 700px;
+    bottom: .4rem;
+}
+
+.link {
+    color: #9FFFCB;
+    text-decoration: none;
+    margin-right: 1.4rem;
+}
+
+.logout-button {
+    height: 1.6rem;
+    margin-right: 1rem;
+}
+
+

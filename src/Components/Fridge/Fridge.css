@@ -1,0 +1,191 @@
+.fridge-container {
+    margin: 1rem;
+}
+
+.fridge-title {
+    text-align: center;
+    margin: 0;
+    margin-top: 2rem;
+    font-size: 3rem;
+}
+
+.new-food-form {
+    margin-bottom: 2rem;
+}
+
+.new-food-form {
+    text-align: center;
+}
+
+.new-food-form-title {
+    margin-top: 3rem;
+    font-size: 1.5rem;
+}
+
+.new-food-form-name-input {
+    border: 0;
+    border-bottom: 1px black solid;
+}
+
+.new-food-form-category-select {
+    margin-right: 1rem;
+    border: 1px grey solid;
+    width: 5.4rem;
+}
+
+.new-food-form-expiration-date {
+    margin-right: 1rem;
+    border: 0;
+    border-bottom: 1px black solid;
+    text-align: center;
+}
+
+.new-food-form-quantity-input {
+    border: 0;
+    border-bottom: 1px black solid;
+}
+
+.new-food-form-quantity-unit-select {
+    margin-right: 1rem;
+    border: 1px grey solid;
+    width: 3.5rem;
+}
+
+.new-food-form-cost-input {
+    border: 0;
+    border-bottom: 1px black solid;
+}
+
+.new-food-form-submit-button {
+    margin-left: 1rem;
+    height: 1rem;
+    width: 6rem;
+    border: 1px grey solid;
+    height: 1.9rem;
+}
+
+.edit-food-form {
+    font-size: .85rem;
+    text-align: left;
+}
+
+.edit-food-form-title {
+    text-align: center;
+}
+
+.edit-form-fields {
+    padding-left: .5rem;
+}
+
+.edit-form-fields select {
+    background-color: white;
+}
+
+.edit-form-fields input {
+    margin-bottom: 1rem;
+    width: 5rem;
+    text-align: center;
+    border: none;
+    border-bottom: 1px black solid;
+}
+
+.edit-food-form-submit {
+    align-items: center;
+}
+
+.edit-food-form-submit-button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.food-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.food-card-header {
+    border-bottom: 1px black solid;
+}
+
+.food-card-title {
+    margin: 0;
+    padding: 1rem;
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+}
+
+.food-card-expiration-date {
+    padding-top: .25rem;
+    padding-bottom: .25rem;
+    font-size: 1.1rem
+}
+
+.food-card-quantity {
+    font-size: 1.1rem;
+}
+
+.add-food-button {
+    width: 10rem;
+    height: 10.7rem;
+    font-size: 1.2rem;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 1rem;
+    border: 1px black solid;
+    margin-top: 6rem;
+    margin-left: 2rem;
+    margin-right: 4rem;
+    cursor: pointer;
+    box-shadow: 5px 5px 5px lightgrey;
+}
+
+.food-card {
+    border: 1px black solid;
+    width: 15rem;
+    height: fit-content;
+    margin-right: 4rem;
+    margin-left: 1rem;
+    margin-top: 4rem;
+    padding-bottom: 1rem;
+    text-align: center;
+    box-shadow: 5px 5px 5px lightgrey;
+}
+
+.food-card-delete-button {
+    display: none;
+}
+
+.food-card:hover .food-card-delete-button {
+    display: inline-block;
+    height: .7rem;
+    position: relative;
+    top: -3.1rem;
+    right: -6.4rem;
+}
+
+.food-card-edit-button {
+    height: 1.25rem;
+    margin-right: 1.5rem;
+    margin-top: 1rem;
+}
+
+.food-card-waste-button {
+    height: 1.25rem;
+    margin-top: 1rem;
+}
+
+.edit-button {
+    margin-right: 1rem;
+}
+
+.header-red {
+    background-color: rgb(202, 44, 44);
+}
+
+.header-yellow {
+    background-color: rgb(247, 219, 95);
+}
+
+.header-green {
+    background-color: rgb(133, 185, 72);
+}
