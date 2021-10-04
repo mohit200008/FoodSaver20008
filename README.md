@@ -2,10 +2,10 @@
 About 6% of global greenhouse gas emissions is produced due to wastage of food. This cause global warming, harm environment, wastage of food (which can be feed to poor), wastage of resources, and wastage of money. FoodSaver is a web application that keep track of the food in your house, or restaurant and keep warning you to use the product before it got expire and got waste.
 
 ## Video Demo Link
-The video demo can be viewed from [here](https://youtu.be/1QqRlR_8TgM)
+The video demo can be viewed from [here](https://youtu.be/1QqRlR_8TgM).
 
 ## Presentation Link
-The presentation can be viewed from [here](https://onedrive.live.com/edit.aspx?resid=2C1DBFC36D3E5AD3!113&ithint=file%2cpptx&authkey=!AMApCqmo-QSfn-c)
+The presentation can be viewed from [here](https://onedrive.live.com/edit.aspx?resid=2C1DBFC36D3E5AD3!113&ithint=file%2cpptx&authkey=!AMApCqmo-QSfn-c).
 
 ## Screenshots
 Home page
