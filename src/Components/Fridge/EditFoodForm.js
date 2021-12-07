@@ -1,75 +1,118 @@
-import React, { Component } from 'react'
+import React, { Component, useState } from 'react';
 
-export default class EditFoodForm extends Component {
-    state = {
-        food_name: this.props.food.food_name,
-        expiration_date: this.props.food.expiration_date,
-        quantity: this.props.food.quantity,
-        quantity_unit: this.props.food.quantity_unit,
-        value: this.props.food.value,
-        food_category: this.props.food.food_category,
-        id: this.props.food.id
-    }
+const EditFoodForm = (props) => {
+  const state_ = {
+    food_name: props.food.food_name,
+    expiration_date: props.food.expiration_date,
+    quantity: props.food.quantity,
+    quantity_unit: props.food.quantity_unit,
+    value: props.food.value,
+    food_category: props.food.food_category,
+    id: props.food.id,
+  };
 
-    handleChange = (event) => {
-        const { name, value } = event.target
-        this.setState({
-          [name]: value
-        })
-    }
+  const [statee, setStatee] = useState(state_);
 
-    handleSubmit = (event) => {
-        event.preventDefault()
-        const { toggleEditForm, updateFood } = this.props
-        updateFood(this.state)
-        toggleEditForm()
-        this.setState({
-            food_name: '',
-            expiration_date: '',
-            quantity: '',
-            quantity_unit: '',
-            value: '',
-            food_category: ''
-        })
-    }
+  const handleChange = (event) => {
+    const { name, value } = event.target;
+    setStatee({
+      ...statee,
+      [name]: value,
+    });
+  };
 
-    render() {
-        const { food_name, expiration_date, value, quantity, quantity_unit, food_category } = this.state
-        return (
-                <form onSubmit={this.handleSubmit} className='edit-food-form'>
-                    <h3 className='edit-food-form-title'>Edit Food</h3>
-                    <div className='edit-form-fields'>
-                        <label>Food Name:</label>
-                        <input type="text" name="food_name" value={food_name} onChange={this.handleChange} />
-                        
-                        <label>Expiration Date:</label>
-                        <input type="date" name="expiration_date" value={expiration_date} onChange={this.handleChange} />
-                        
-                        <label>Quantity:</label>
-                        <input type="number" name="quantity" min="0" step="0.1" value={quantity} onChange={this.handleChange} />
-                        
-                        <select name="quantity_unit" value={quantity_unit} onChange={this.handleChange}>
-                                <option value="">unit</option>
-                                <option value="lbs">lbs</option>
-                                <option value="oz">oz</option>
-                                <option value="count">count</option>
-                        </select>
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    const { toggleEditForm, updateFood } = props;
+    updateFood(statee);
+    toggleEditForm();
+    setStatee({
+      ...statee,
+      food_name: '',
+      expiration_date: '',
+      quantity: '',
+      quantity_unit: '',
+      value: '',
+      food_category: '',
+    });
+  };
 
-                        <label>Cost:</label>
-                        <input type="number" name="value" value={value} min="0" step="0.1" onChange={this.handleChange} />
+  const {
+    food_name,
+    expiration_date,
+    value,
+    quantity,
+    quantity_unit,
+    food_category,
+  } = statee;
+  return (
+    <form onSubmit={handleSubmit} className="edit-food-form">
+      <h3 className="edit-food-form-title">Edit Food</h3>
+      <div className="edit-form-fields">
+        <label>Food Name:</label>
+        <input
+          type="text"
+          name="food_name"
+          value={food_name}
+          onChange={handleChange}
+        />
 
-                        <select name="food_category" value={food_category} onChange={this.handleChange} >
-                        <option value="">category</option>
-                            <option value="dairy">Dairy</option>
-                            <option value="fruit">Fruit</option>
-                            <option value="vegetable">Vegetable</option>
-                            <option value="vegetable">Non-Vegitarian</option>
-                        </select>
-                    </div>
-                    <div className='edit-food-form-submit-button-container'>
-                        <input className='edit-food-form-submit' type="submit" value="Submit" />
-                    </div>
-                </form>
-        )
-    }
-}
+        <label>Expiration Date:</label>
+        <input
+          type="date"
+          name="expiration_date"
+          value={expiration_date}
+          onChange={handleChange}
+        />
+
+        <label>Quantity:</label>
+        <input
+          type="number"
+          name="quantity"
+          min="0"
+          step="0.1"
+          value={quantity}
+          onChange={handleChange}
+        />
+
+        <select
+          name="quantity_unit"
+          value={quantity_unit}
+          onChange={handleChange}
+        >
+          <option value="">unit</option>
+          <option value="lbs">lbs</option>
+          <option value="oz">oz</option>
+          <option value="count">count</option>
+        </select>
+
+        <label>Cost:</label>
+        <input
+          type="number"
+          name="value"
+          value={value}
+          min="0"
+          step="0.1"
+          onChange={handleChange}
+        />
+
+        <select
+          name="food_category"
+          value={food_category}
+          onChange={handleChange}
+        >
+          <option value="">category</option>
+          <option value="dairy">Dairy</option>
+          <option value="fruit">Fruit</option>
+          <option value="vegetable">Vegetable</option>
+          <option value="vegetable">Non-Vegitarian</option>
+        </select>
+      </div>
+      <div className="edit-food-form-submit-button-container">
+        <input className="edit-food-form-submit" type="submit" value="Submit" />
+      </div>
+    </form>
+  );
+};
+
+export default EditFoodForm;
