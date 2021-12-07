@@ -33,6 +33,8 @@ export default function HomePage({ foods }) {
                 </div>
                 <div className='food-page-expiration-count-container'>
                     <h3 className='home-page-food-count-message'>Food about to Expire</h3>
+                    
+                  
                     <div className="home-page-card-container">
                         <div className='home-page-cards'>
                             <h3 className='expiration-number high'>{aboutToExpire(foods).high}</h3>
