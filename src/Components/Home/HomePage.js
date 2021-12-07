@@ -33,22 +33,22 @@ export default function HomePage({ foods }) {
                 </div>
                 <div className='food-page-expiration-count-container'>
                     <h3 className='home-page-food-count-message'>Food about to Expire</h3>
+                    <div className="home-page-card-container">
+                        <div className='home-page-cards'>
+                            <h3 className='expiration-number high'>{aboutToExpire(foods).high}</h3>
+                            <h3 className='expiration-message'>in 7 days</h3>
+                        </div>
 
-                    <div>
-                        <h3 className='expiration-number high'>{aboutToExpire(foods).high}</h3>
-                        <h3 className='expiration-message'>in 7 days</h3>
-                    </div>
-
-                    <div>
-                        <h3 className='expiration-number medium'>{aboutToExpire(foods).medium}</h3>
-                        <h3 className='expiration-message'>between 4 to 7 days</h3>
-                    </div>
+                        <div className='home-page-cards'>
+                            <h3 className='expiration-number medium'>{aboutToExpire(foods).medium}</h3>
+                            <h3 className='expiration-message'>between 4 to 7 days</h3>
+                        </div>
                    
-                    <div>
-                        <h3 className='expiration-number low'>{aboutToExpire(foods).low}</h3>
-                        <h3 className='expiration-message'> under 3 days</h3>
-                    </div>
-
+                        <div className='home-page-cards'>
+                            <h3 className='expiration-number low'>{aboutToExpire(foods).low}</h3>
+                            <h3 className='expiration-message'> under 3 days</h3>
+                        </div>
+                   </div>
                 </div>
             </div>
         </div>

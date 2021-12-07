@@ -11,7 +11,24 @@
     margin-top: 4rem;
     /* margin-bottom: 3rem; */
 }
+.home-page-card-container{
+    display: flex;
+    flex-direction: column;
 
+}
+
+.home-page-cards{
+    border-radius: 10px;
+    margin: 15px;
+    box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.25);
+    background: #FCFCFC;
+    transition-duration: 0.5s;
+}
+
+.home-page-cards:hover{
+    cursor: pointer;
+    background: #dbdbdb;
+ }
 .home-page-food-count-container{
     width: 23rem;
     text-align: center;
