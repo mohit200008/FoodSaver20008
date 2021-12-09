@@ -21,6 +21,7 @@ export default class Home extends Component {
                         <Route exact path='/food' render={(props) => <Food {...this.props} />} />
                         <Route exact path='/recipepage' component={Recipepage} />
                         <Route exact path='/creativity' component={Creativity} />
+                        <Route exact path='/login'  />
                        </div>
                     </div>
                 </Router>

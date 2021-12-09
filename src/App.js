@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import Home from './Components/Home/Home'
 import Chatbot from './Components/Chatbot/Chatbot'
+import Login from './Components/Login/Login'
 
 class App extends Component {
   state = {
@@ -90,6 +91,7 @@ class App extends Component {
                 deleteFood={this.deleteFood} 
                 updateFood={this.updateFood}
                 />
+        <Login />
       </div>
     );
   }
