@@ -3,7 +3,7 @@
     flex-direction:column;
     align-items:center;
     background-color: white !important;
-    margin-top: 30px;
+    margin-top: 15px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     
 }
@@ -12,12 +12,12 @@
     flex-direction:column;
     align-items:center;
     background-color: white !important;
-    padding: 1.5rem;
+    padding: 1.25rem;
     border: #2caa5c solid .5px;
     border-radius: 10px;
 }
 .signin .signin-container .signin-header{
-    font-size: 2.2rem;
+    font-size: 2.25rem;
     margin-bottom: 1rem;
 }
 .signin .signin-container .signin-header .homepage >Link,
@@ -32,7 +32,7 @@
 
     text-align: center;
     text-transform: capitalize;
-    font-size: 1.75rem;
+    font-size: 1.25rem;
     
 }
 .signin .signin-container .signin-header > p{
@@ -40,11 +40,11 @@
     text-transform: capitalize;
     font-size: 1rem;
     justify-content: center;
-    padding: .5rem;
+    padding: .3rem;
 }
 
 .signin .signin-container .signin-form{
-    padding : 1rem;
+    padding : .5rem;
     border-radius: 10px;
 }
 
@@ -70,6 +70,7 @@
 }
 
 .signin .signin-container .signin-form .form-group .signin-btn{
+    
     background-color: #2caa5c;
     color: white;
     font-size: 1.5rem;
@@ -88,11 +89,10 @@
     border-radius: 0;
     outline: none;
     cursor: pointer;
-
-}
-.signin .signin-container .signin-form .form-group .lost{
-    margin:0;
-    font-size: 12px;
+    border-radius:100px;
+    color: white;
+    text-transform: capitalize;
+    background-color: rgb(0, 153, 77);
 }
 
 
@@ -103,4 +103,11 @@
     justify-content: center;
     padding: .3rem;
     color: #2caa5c;
+}
+.signin .signin-container .signin-form .form-group .lost{
+    color: #2caa5c; 
+    border:0px;
+    background-color: transparent;
+    font-size: 1rem;
+    cursor: pointer;
 }

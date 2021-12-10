@@ -46,7 +46,7 @@ function Login() {
             <div className="signin-container">
                 <div className="signin-header">
                     <Link to="/" className="homepage" ><h3>FoodSaver</h3></Link>
-                    <h2>sign in</h2>
+                    <h2>sign in / Sign Up</h2>
                     <p>signIn to your account</p>
                 </div>
                 <div className="signin-form">
@@ -63,13 +63,15 @@ function Login() {
                         </div>
                         <div className="form-group">
                             <button type="submit" onClick={login}className="signin-btn">Sign in</button>
-                            <h4 className="lost" >Lost Password?</h4>
+                            <Link to="/ForgotPage" ><button className="lost" >Lost Password?</button></Link>
                         </div>
                         <div className="form-group">
-                            <Link to="/register"><h6 className="h6">Don't have an account?</h6>
-                            <button type="submit" onClick={register}  className="register-button">Create Your Account</button></Link>
+                            <h6 className="h6">Don't have an account?</h6>
+                            <button type="submit" onClick={register}  className="register-button">Create Your Account</button>
                         </div>
                     </form>
+                  
+
                 </div>
             </div>
         </div>

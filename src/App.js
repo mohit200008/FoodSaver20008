@@ -88,9 +88,8 @@ class App extends Component {
         <Chatbot/>
           <Switch>
             <Route exact path='/' render={() => <Home logOut ={this.logOut} foods={this.state.foods}  addFood={this.addFood}  updateFood={this.updateFood} deleteFood={this.deleteFood} />} />
-            <Route exact path='/login' render={() => <Login  />} />
+            <Route exact path='/Login' render={() => <Login  />} />
           </Switch>
-          {/* <Login/> */}
         </Router>
       </div>
     );
