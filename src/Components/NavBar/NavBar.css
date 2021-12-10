@@ -1,8 +1,8 @@
 .navbar {
     background-color: #222;
-    padding: 1.5rem;
+    padding: 1.25rem;
     height: 2rem;
-    box-shadow: 5px 5px 5px lightgrey;
+    box-shadow: 5px 5px 5px lightgrey ;
     display: flex;
     justify-content: space-between;
 }
@@ -14,15 +14,18 @@
 
 .link-container {
     display: flex;
+    justify-self: unset;
     flex-direction: row;
     align-items: flex-end;
+    /* margin-bottom: 4rem; */
 }
 
 .links {
     position: relative;
-    /* margin-right: 50px; */
-    padding-left: 700px;
+    margin-right: 30px;
+    padding-left: 650px;
     bottom: .4rem;
+    /* font-size: 1.5rem; */
 }
 
 .link {

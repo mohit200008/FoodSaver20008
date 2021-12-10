@@ -1,48 +1,50 @@
 import React from 'react'
 import './Login.css'
-import { Link } from 'react-router-dom'
-// import { auth } from './firebase'
+import {useHistory} from 'react-router-dom'
+import { auth } from '../../firebase'
+import {Link} from 'react-router-dom'
+// import {NavBar} from './NavBar'
 
 
 function Login() {
-    // const history = useHistory();
-    // const [email, setEmail] = React.useState('')
-    // const [password, setPassword] = React.useState('')
+    const history = useHistory();
+    const [email, setEmail] = React.useState('')
+    const [password, setPassword] = React.useState('')
 
-    // const logIn = e => {
-    //     e.preventDefault()
-    //     console.log('Sign in')
-    //     auth.logInWithEmailAndPassword(email, password)
-    //         .then(auth => {
-    //             history.push('/')
-    //         })
-    //         .catch(error => alert(error.message))
-    // }
-    // const register = e => {
-    //     e.preventDefault()
-    //     console.log('Register')
-    //     auth
-    //         .createUserWithEmailAndPassword(email, password)
-    //         .then(auth => {
-    //             // it succesfully created a user
-    //             // console.log(auth)
-    //             if (auth) {
-    //                 history.push('/')
-    //             }
-    //         })
-    //         .catch(error => {
+    const LogIn = e => {
+        e.preventDefault()
+        console.log('Sign in')
+        auth.logInWithEmailAndPassword(email, password)
+            .then(auth => {
+                history.push('/')
+            })
+            .catch(error => alert(error.message))
+    }
+    const register = e => {
+        e.preventDefault()
+        console.log('Register')
+        auth
+            .createUserWithEmailAndPassword(email, password)
+            .then(auth => {
+                // it succesfully created a user
+                // console.log(auth)
+                if (auth) {
+                    history.push('/')
+                }
+            })
+            .catch(error => {
 
-    //             // it failed to create a user
-    //             alert(error.message)
-    //             // console.log(error)
-    //         })
-    // }
+                // it failed to create a user
+                alert(error.message)
+                // console.log(error)
+            })
+    }
     return (
         <div className="signin">
             
             <div className="signin-content">
                 <div className="signin-header">
-                    <h2>Sign in</h2>
+                    <Link to="/">Signin</Link>
                     <p>Login to your account</p>
                 </div>
                 <div className="signin-form">
@@ -59,7 +61,8 @@ function Login() {
                             <button type="submit" className="btn btn-primary btn-block">Sign in</button>
                         </div>
                         <div className="form-group">
-                            {/* <Link to="/register">Don't have an account?</Link> */}
+                            <Link to="/register">Don't have an account?</Link>
+                            {/* <button type="submit" className="signin_register_button">Create Your Account</button> */}
                         </div>
                     </form>
                 </div>
@@ -68,32 +71,9 @@ function Login() {
     )
 }
 
-                // {/* <img
-                //     className="signin__logo"
-                //     src=""
-                //     alt=""
-                // /> */}
+                //  <img className="signin__logo" src=""/>
             
-//             <div className="signin_container">
-//                 <h1>Sign in</h1>
-//                 <form>
-//                     <h5>E-mail/Phone number</h5>
-//                     <input type="email" placeholder="Email" />
-//                     <h5>Password</h5>
-//                     <input type="password" placeholder="Password"  />
 
-//                     <button type="submit" className="signin_button">login</button>
-//                 </form>
-//                 <p>
-                    
-//                 </p>
-//                 <p>
-//                     {/* Need help? <Link to='/'>Contact us</Link> */}
-//                 </p>
-//                 <button type="submit" className="signin_register_button">Create Your Account</button>
-//             </div>
-//         </div>
-//     )
-// }
 
+               
 export default Login

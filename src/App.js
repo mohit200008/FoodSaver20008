@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import './App.css';
 import Home from './Components/Home/Home'
 import Chatbot from './Components/Chatbot/Chatbot'
-import Login from './Components/Login/Login'
+import Login from './Components/Login/login'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
 class App extends Component {
   state = {
@@ -83,15 +84,14 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Chatbot />
-        <Home 
-                logOut={this.logOut} 
-                foods={this.state.foods} 
-                addFood={this.addFood} 
-                deleteFood={this.deleteFood} 
-                updateFood={this.updateFood}
-                />
-        <Login />
+        <Router>
+        <Chatbot/>
+          <Switch>
+            <Route exact path='/' render={() => <Home logOut ={this.logOut} foods={this.state.foods}  addFood={this.addFood}  updateFood={this.updateFood} deleteFood={this.deleteFood} />} />
+            <Route exact path='/login' render={() => <Login  />} />
+          </Switch>
+          {/* <Login/> */}
+        </Router>
       </div>
     );
   }
