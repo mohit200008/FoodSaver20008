@@ -5,7 +5,7 @@ import 'firebase/storage';
 
 
 // import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
+// import { getAnalytics } from "firebase/analytics";
 import firebase from "firebase/compat/app"
 import "firebase/compat/auth"
 import "firebase/compat/firestore"
@@ -18,7 +18,7 @@ const firebaseConfig = {
   storageBucket: "food-saver-0.appspot.com",
   messagingSenderId: "529976180787",
   appId: "1:529976180787:web:cdcc3bc16429b88f7ae346",
-  measurementId: "${config.measurementId}"
+  // measurementId: "${config.measurementId}"
 };
 
 // Initialize Firebase

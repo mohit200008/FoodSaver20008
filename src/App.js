@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import Home from './Components/Home/Home'
 import Chatbot from './Components/Chatbot/Chatbot'
-import Login from './Components/Login/login'
+import Login from './Components/Login/Login'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
 class App extends Component {

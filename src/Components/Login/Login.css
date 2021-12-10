@@ -1,0 +1,106 @@
+.signin{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    background-color: white !important;
+    margin-top: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+.signin .signin-container{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    background-color: white !important;
+    padding: 1.5rem;
+    border: #2caa5c solid .5px;
+    border-radius: 10px;
+}
+.signin .signin-container .signin-header{
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+}
+.signin .signin-container .signin-header .homepage >Link,
+.signin .signin-container .signin-header .homepage > h3{
+    /* text-transform: uppercase; */
+    color: #2caa5c;
+    text-align: center;
+    justify-content: center;
+    padding:10px;
+}
+.signin .signin-container .signin-header> h2{
+
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 1.75rem;
+    
+}
+.signin .signin-container .signin-header > p{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 1rem;
+    justify-content: center;
+    padding: .5rem;
+}
+
+.signin .signin-container .signin-form{
+    padding : 1rem;
+    border-radius: 10px;
+}
+
+.signin .signin-container .signin-form .form-group{
+    border-radius: 0;
+    background-color: transparent;
+    color: #2caa5c;
+    font-size: 1.5rem;
+    padding: .5rem;
+    width: 100%;
+    outline: none;
+}
+.signin .signin-container .signin-form .form-group .form-control {
+    border: none;
+    border-bottom: 1px solid #2caa5c;
+    border-radius: 0;
+    background-color: transparent;
+    color: #2caa5c;
+    font-size: .9rem;
+    padding: .5rem;
+    width: 100%;
+    outline: none;
+}
+
+.signin .signin-container .signin-form .form-group .signin-btn{
+    background-color: #2caa5c;
+    color: white;
+    font-size: 1.5rem;
+    padding: .5rem;
+    width: 100%;
+    border: none;
+    border-radius: 0;
+    outline: none;
+    cursor: pointer;
+}   
+.signin .signin-container .signin-form .form-group .register-button {
+    padding: .5rem;
+    width: 100%;
+    border: none;
+    font-size: medium;
+    border-radius: 0;
+    outline: none;
+    cursor: pointer;
+
+}
+.signin .signin-container .signin-form .form-group .lost{
+    margin:0;
+    font-size: 12px;
+}
+
+
+.signin .signin-container .signin-form .form-group .h6{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 1rem;
+    justify-content: center;
+    padding: .3rem;
+    color: #2caa5c;
+}

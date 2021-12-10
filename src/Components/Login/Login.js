@@ -11,10 +11,11 @@ function Login() {
     const [email, setEmail] = React.useState('')
     const [password, setPassword] = React.useState('')
 
-    const LogIn = e => {
+    const login = e => {
         e.preventDefault()
         console.log('Sign in')
-        auth.logInWithEmailAndPassword(email, password)
+        auth
+            .signInWithEmailAndPassword(email, password)
             .then(auth => {
                 history.push('/')
             })
@@ -42,27 +43,31 @@ function Login() {
     return (
         <div className="signin">
             
-            <div className="signin-content">
+            <div className="signin-container">
                 <div className="signin-header">
-                    <Link to="/">Signin</Link>
-                    <p>Login to your account</p>
+                    <Link to="/" className="homepage" ><h3>FoodSaver</h3></Link>
+                    <h2>sign in</h2>
+                    <p>signIn to your account</p>
                 </div>
                 <div className="signin-form">
                     <form>
                         <div className="form-group">
                             <label htmlFor="email"><h5>Email</h5></label>
-                            <input type="email" className="form-control" id="email" placeholder="Enter email" />
+                            <input type="email" className="form-control" id="email" placeholder="Enter email" value={email} onChange=
+                        {e => setEmail(e.target.value)} />
                         </div>
                         <div className="form-group">
                             <label htmlFor="password"><h5>Password</h5></label>
-                            <input type="password" className="form-control" id="password" placeholder="Enter password" />
+                            <input type="password" className="form-control" id="password" placeholder="Enter password" value={password} onChange=
+                        {e => setPassword(e.target.value)} />
                         </div>
                         <div className="form-group">
-                            <button type="submit" className="btn btn-primary btn-block">Sign in</button>
+                            <button type="submit" onClick={login}className="signin-btn">Sign in</button>
+                            <h4 className="lost" >Lost Password?</h4>
                         </div>
                         <div className="form-group">
-                            <Link to="/register">Don't have an account?</Link>
-                            {/* <button type="submit" className="signin_register_button">Create Your Account</button> */}
+                            <Link to="/register"><h6 className="h6">Don't have an account?</h6>
+                            <button type="submit" onClick={register}  className="register-button">Create Your Account</button></Link>
                         </div>
                     </form>
                 </div>
@@ -70,10 +75,5 @@ function Login() {
         </div>
     )
 }
-
-                //  <img className="signin__logo" src=""/>
-            
-
-
-               
+         
 export default Login

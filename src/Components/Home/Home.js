@@ -7,7 +7,7 @@ import HomePage from '../Home/HomePage'
 import HomeHindi from './HomeHindi'
 import Creativity from '../Creativity/Creativity'
 import './Home.css'
-import Login from '../Login/login';
+import Login from '../Login/Login';
 
 export default class Home extends Component {
     render() {
