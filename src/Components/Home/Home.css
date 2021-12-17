@@ -16,13 +16,36 @@
   flex-direction: column;
   justify-content: space-evenly;
 }
+.home-page-card-container{
+    display: flex;
+    flex-direction: column;
 
+}
+
+.home-page-cards{
+    border-radius: 10px;
+    margin: 15px;
+    box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.25);
+    background: #FCFCFC;
+    transition-duration: 0.5s;
+}
+
+<<<<<<< HEAD
 .home-page-food-count-container {
   width: 40%;
   z-index: 100;
   opacity: 1;
 
   text-align: center;
+=======
+.home-page-cards:hover{
+    cursor: pointer;
+    background: #dbdbdb;
+ }
+.home-page-food-count-container{
+    width: 23rem;
+    text-align: center;
+>>>>>>> a41c8841b24451a711feb3e7a1404f726556e522
 }
 
 .home-page-food-count-img {
