@@ -16,36 +16,21 @@
   flex-direction: column;
   justify-content: space-evenly;
 }
-.home-page-card-container{
-    display: flex;
-    flex-direction: column;
 
+.home-page-cards {
+  border-radius: 10px;
+  margin: 15px;
+  box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.25);
+  background: #fcfcfc;
+  transition-duration: 0.5s;
 }
 
-.home-page-cards{
-    border-radius: 10px;
-    margin: 15px;
-    box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.25);
-    background: #FCFCFC;
-    transition-duration: 0.5s;
-}
-
-<<<<<<< HEAD
 .home-page-food-count-container {
   width: 40%;
   z-index: 100;
   opacity: 1;
 
   text-align: center;
-=======
-.home-page-cards:hover{
-    cursor: pointer;
-    background: #dbdbdb;
- }
-.home-page-food-count-container{
-    width: 23rem;
-    text-align: center;
->>>>>>> a41c8841b24451a711feb3e7a1404f726556e522
 }
 
 .home-page-food-count-img {
@@ -151,9 +136,10 @@
   border: 2px solid orange;
   background: white;
   border-radius: 5%;
-  padding: 6% 1% 11% 0%;
+  padding: 2% 1% 10% 0%;
   width: 15rem;
-  height: 12rem;
+  height: 0rem;
+
   display: inline-block;
   margin: 2% 3%;
 
@@ -175,8 +161,8 @@
   color: white;
 }
 .home-page-card-container {
-  width: 99%;
-  padding: 1% 20%;
+  width: 97%;
+  padding: -1% 20%;
 
   position: absolute;
   left: 5px;
