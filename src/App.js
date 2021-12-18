@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import Home from './Components/Home/Home'
 import Chatbot from './Components/Chatbot/Chatbot'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 class App extends Component {
   state = {
