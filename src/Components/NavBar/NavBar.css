@@ -1,39 +1,37 @@
 .navbar {
-    background-color: #222;
-    padding: 1.5rem;
-    height: 2rem;
-    box-shadow: 5px 5px 5px lightgrey;
-    display: flex;
-    justify-content: space-between;
+  background-color: #222;
+  padding: 1.5rem;
+  height: 5rem;
+  box-shadow: 5px 5px 5px lightgrey;
+  display: flex;
+  justify-content: space-between;
 }
 
 .navbar-title {
-    font-size: 2rem;
-    margin: 0;
+  font-size: 2rem;
+  margin: 0;
 }
 
 .link-container {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
 }
 
 .links {
-    position: relative;
-    /* margin-right: 50px; */
-    padding-left: 700px;
-    bottom: .4rem;
+  position: relative;
+  /* margin-right: 50px; */
+  padding-left: 900px;
+  bottom: 0.4rem;
 }
 
 .link {
-    color: #9FFFCB;
-    text-decoration: none;
-    margin-right: 1.4rem;
+  color: #9fffcb;
+  text-decoration: none;
+  margin-right: 1.4rem;
 }
 
 .logout-button {
-    height: 1.6rem;
-    margin-right: 1rem;
+  height: 1.6rem;
+  margin-right: 1rem;
 }
-
-
