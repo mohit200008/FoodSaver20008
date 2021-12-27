@@ -7,6 +7,8 @@ import HomePage from '../Home/HomePage'
 import HomeHindi from './HomeHindi'
 import Creativity from '../Creativity/Creativity'
 import './Home.css'
+import Login from '../Login/Login';
+import { Signup } from '../Login/Signup';
 
 export default class Home extends Component {
     render() {
@@ -21,6 +23,8 @@ export default class Home extends Component {
                         <Route exact path='/food' render={(props) => <Food {...this.props} />} />
                         <Route exact path='/recipepage' component={Recipepage} />
                         <Route exact path='/creativity' component={Creativity} />
+                        <Route exact path='/login' component={Login} />
+                        <Route exact path='/signup' component={Signup} />
                        </div>
                     </div>
                 </Router>
