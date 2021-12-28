@@ -13,7 +13,7 @@ const NavBar = ({ logOut }) => {
                     <NavLink className='link' to='/food'>Add Food</NavLink>
                     <NavLink className='link' to='/recipepage'>Recipe</NavLink>
                     <NavLink className='link' to='/creativity'>Creativity</NavLink>
-                    <NavLink className='link' to='/login'>Login</NavLink>
+                    {/* <NavLink className='link' to='/login'>Login</NavLink> */}
                     <NavLink className='link' to='/hi' style={{color: "#00ff00"}}>अ/Aa</NavLink>
                 </span>
             </div>
