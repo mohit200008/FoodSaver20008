@@ -9,59 +9,76 @@
     font-size: 3rem;
 }
 
-.new-food-form {
-    margin-bottom: 2rem;
-}
 
 .new-food-form {
-    text-align: center;
+    /* display: flex;
+    flex-direction: column; */
+    display: grid;
+    grid-template-columns: 700px;
+    justify-content: center;
+    width: fit-content;
+    margin: auto;
+    padding: 40px 70px 40px;
+    border-radius: 50px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background: #EAFFFE;
 }
 
-.new-food-form-title {
-    margin-top: 3rem;
-    font-size: 1.5rem;
+.food-form-element{
+    /* padding: 10px; */
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    background: rgba(156, 255, 249, 0.8);
+    border: none;
+    border-radius: 10px;
 }
+
 
 .new-food-form-name-input {
-    border: 0;
-    border-bottom: 1px black solid;
+    /* border: 0;
+    border-bottom: 1px black solid; */
 }
 
 .new-food-form-category-select {
-    margin-right: 1rem;
+    /* margin-right: 1rem;
     border: 1px grey solid;
-    width: 5.4rem;
+    width: 5.4rem; */
 }
 
 .new-food-form-expiration-date {
-    margin-right: 1rem;
+    /* margin-right: 1rem;
     border: 0;
     border-bottom: 1px black solid;
-    text-align: center;
+    text-align: center; */
 }
 
 .new-food-form-quantity-input {
-    border: 0;
-    border-bottom: 1px black solid;
+    /* border: 0;
+    border-bottom: 1px black solid; */
 }
 
 .new-food-form-quantity-unit-select {
-    margin-right: 1rem;
+    /* margin-right: 1rem;
     border: 1px grey solid;
-    width: 3.5rem;
+    width: 3.5rem; */
 }
 
 .new-food-form-cost-input {
-    border: 0;
-    border-bottom: 1px black solid;
+    /* border: 0;
+    border-bottom: 1px black solid; */
 }
 
 .new-food-form-submit-button {
-    margin-left: 1rem;
-    height: 1rem;
-    width: 6rem;
-    border: 1px grey solid;
-    height: 1.9rem;
+    background: rgba(98, 255, 245, 0.8);
+    border: none;
+    padding: 10px;
+    transition: 0.6s;
+    border-radius: 20px;
+}
+.new-food-form-submit-button:hover{
+    background:rgba(12, 255, 239, 0.8) ;
+    cursor: pointer;
 }
 
 .edit-food-form {
