@@ -1,97 +1,108 @@
-import React, { Component } from 'react';
+import React, { Component, useState } from 'react';
 import './App.css';
-import Home from './Components/Home/Home'
-import Chatbot from './Components/Chatbot/Chatbot'
+import Home from './Components/Home/Home';
+import Chatbot from './Components/Chatbot/Chatbot';
 
-class App extends Component {
-  state = {
+const App = () => {
+  const statee = {
     foods: [],
-    wastes: []
-  }
-  
-  fetchFoods = () => {
-    this.logIn()
+    wastes: [],
+  };
+  const [state_, setState_] = useState(statee);
+
+  const fetchFoods = () => {
+    // logIn();
     return fetch('', {
       method: 'GET',
       headers: {
-        Authorization: `Bearer ${localStorage.getItem('token')}`
-      }
-    }
-    )
-    .then(response => response.json())
-    .then(foods => this.setState({
-      foods: foods
-    }))
-    .catch(error => console.log('Error:', error))
-  }
+        Authorization: `Bearer ${localStorage.getItem('token')}`,
+      },
+    })
+      .then((response) => response.json())
+      .then((foods) =>
+        setState_({
+          ...state_,
+          foods: foods,
+        })
+      )
+      .catch((error) => console.log('Error:', error));
+  };
 
-  addFood = (food) => {
-    const body = {...food}
-    let url = 'https://foodsaver-83b19.web.app/food'
+  const addFood = (food) => {
+    const body = { ...food };
+    let url = 'https://foodsaver-83b19.web.app/food';
     fetch(url, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        Authorization: `Bearer ${localStorage.getItem('token')}`
+        Authorization: `Bearer ${localStorage.getItem('token')}`,
       },
-      body: JSON.stringify(body)
+      body: JSON.stringify(body),
     })
-    .then(response => response.json())
-    .then(response => this.setState({
-      foods: [...this.state.foods, response]
-    }))
-    .catch(error => console.log('Error:', error))
-  }
+      .then((response) => response.json())
+      .then((response) =>
+        setState_({
+          ...state_,
+          foods: [...state_.foods, response],
+        })
+      )
+      .catch((error) => console.log('Error:', error));
+  };
 
-  deleteFood = (id) => {
-    const body = {id}
-    const newState = this.state.foods.filter(food => food.id !== id)
-    let url = `${id}`
+  const deleteFood = (id) => {
+    const body = { id };
+    const newState = state_.foods.filter((food) => food.id !== id);
+    let url = `${id}`;
     fetch(url, {
       method: 'DELETE',
       headers: {
         'Content-Type': 'application/json',
-        Authorization: `Bearer ${localStorage.getItem('token')}`
+        Authorization: `Bearer ${localStorage.getItem('token')}`,
       },
-      body: JSON.stringify(body)
+      body: JSON.stringify(body),
     })
-    .catch(error => console.log(error))
-    .then(this.setState({
-      foods: newState
-    }))
-  }
+      .catch((error) => console.log(error))
+      .then(
+        setState_({
+          ...state_,
+          foods: newState,
+        })
+      );
+  };
 
-  updateFood = (food) => {
-    const body = {...food}
-    const newState = this.state.foods.filter(f => f.id !== food.id)
-    let url = `${food.id}`
+  const updateFood = (food) => {
+    const body = { ...food };
+    const newState = state_.foods.filter((f) => f.id !== food.id);
+    let url = `${food.id}`;
     fetch(url, {
       method: 'PATCH',
       headers: {
         'Content-Type': 'application/json',
-        Authorization: `Bearer ${localStorage.getItem('token')}`
+        Authorization: `Bearer ${localStorage.getItem('token')}`,
       },
-      body: JSON.stringify(body)
+      body: JSON.stringify(body),
     })
-    .catch(error => console.error('Error:', error))
-    .then(this.setState({
-      foods: [...newState, food]
-    }))
-  }
+      .catch((error) => console.error('Error:', error))
+      .then(
+        setState_({
+          ...state_,
+          foods: [...newState, food],
+        })
+      );
+  };
 
-  render() {
-    return (
-      <div className="App">
-        <Chatbot />
-        <Home 
-                logOut={this.logOut} 
-                foods={this.state.foods} 
-                addFood={this.addFood} 
-                deleteFood={this.deleteFood} 
-                updateFood={this.updateFood}
-                />
-      </div>
-    );
-  }
-}
+  return (
+    <div className="App">
+      <Chatbot />
+      <Home
+        // logOut={logOut}
+        foods={state_.foods}
+        addFood={addFood}
+        deleteFood={deleteFood}
+        updateFood={updateFood}
+      />
+    </div>
+  );
+};
+
 export default App;
