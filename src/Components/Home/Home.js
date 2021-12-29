@@ -8,6 +8,7 @@ import HomeHindi from './HomeHindi'
 import Creativity from '../Creativity/Creativity'
 import Login from '../Login/Login'
 import Signup from '../Login/Signup'
+import Otp from '../Login/Otp'
 import './Home.css'
 
 export default class Home extends Component {
@@ -25,6 +26,8 @@ export default class Home extends Component {
                         <Route exact path='/creativity' component={Creativity} />
                         <Route exact path='/login' component={Login} />
                         <Route exact path='/signup' component={Signup} />
+                        <Route exact path='/otp' component={Otp} />
+
                        </div>
                     </div>
                 </Router>
