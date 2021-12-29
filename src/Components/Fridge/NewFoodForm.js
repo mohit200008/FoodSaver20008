@@ -66,15 +66,6 @@ const NewFoodForm = (props) => {
         <option value="vegetable">Non-Vegitarian</option>
       </select>
 
-      <label>Expiration Date:</label>
-      <input
-        className="new-food-form-expiration-date"
-        type="date"
-        name="expiration_date"
-        value={expiration_date}
-        onChange={handleChange}
-      />
-
       <label>Quantity:</label>
       <input
         className="new-food-form-quantity-input"
