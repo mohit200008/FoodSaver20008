@@ -25,7 +25,7 @@ function Login() {
                     <div className="form-group_0">
                         <input type="password" className="control_0" id="password" placeholder="Password" />
                     </div>
-                    <button className='otp-btn'>Login</button>
+                    <button className='otp-btn_1'>Signin</button>
                 </form>
             </div>
             <div className='here'><Link to='/Otp'>Login with Otp</Link></div>

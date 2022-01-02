@@ -29,9 +29,21 @@
     z-index: 0;
     font-size: small;
     width: 300px;
-    height: 280px;
+    height: 250px;
     border-radius: 30px;
     clip-path: ellipse(84% 100% at 29.26% 0%); 
+}
+.signin-header_1{
+    background-color: #ff9900;
+    color:#FFFFFF;
+    position: absolute;
+    overflow: hidden;
+    z-index: 0;
+    font-size: small;
+    width: 300px;
+    height: 280px;
+    border-radius: 30px;
+    clip-path:ellipse(84% 100% at 29.26% 0%); 
 }
 .signup-header{
     background-color: #ff9900;
@@ -46,6 +58,7 @@
     clip-path: ellipse(84% 100% at 29.26% 0%); 
 }
 .signin-header >p,
+.signin-header_1 >p,
 .signup-header >p{
     margin-top:20px;
     left:10px;
@@ -115,11 +128,6 @@ h3{
     border: none;
 }
 
-.form-control::placeholder,
-.control::placeholder{
-    font-size: 18px;
-  
-}
 .pic{
     width: 55vw;
     height: 55vh;   
@@ -129,30 +137,50 @@ h3{
     margin-left: -350px;
     margin-top: -60vh;
 }
-
+::placeholder{
+    color: linear-gradient(0deg, #3E3333, #3E3333),
+    linear-gradient(0deg, #3E3333, #3E3333);
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+}
 .here{
-    color:blue;
     text-transform: capitalize;
-    /* text-decoration: underline; */
     margin-left: 20px;
-    /* margin-top: 15px; */
+    margin-top: 10px;
     cursor:pointer;
+    position: relative;
 }
 .here_1{
     text-transform: capitalize;
-    /* text-decoration: underline; */
     margin-left: 10px;
-    margin-top: 20px;
+    margin-top: 2vh;
     cursor:pointer;
+    position: relative;
 }
 
 .otp{
-    padding-left: 10px;
+    align-items: center;
+    width: 60px;
+    font-size: 22px;
+}
+.bttn{
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-top: 2vh;
-    
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+}
+
+input{   
+    background: rgba(196, 196, 196, 0.54);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px #888888;
+    color: #3E3333;
+    position: relative;
+    border:none;
 }
 .otp>span{
     align-items: center;
@@ -160,31 +188,63 @@ h3{
     justify-content: space-between;
     margin-left: 10px;
     padding-left: 2px;
+    position: relative;
 }
 
 .otp-btn{
+    background-color: #ff9900;
     border: none;
     text-align: center;
-    padding: 5px;
+    padding: 10px;
+    margin-top: 3vh;
+    margin-left: 30px;
+    margin-right: 30px;
     text-transform: uppercase;
-    background-color: #888888;
     color: #FFFFFF;
+    position: relative;
+    border-radius: 10px;
+}
+.otp-btn_1{
+    background-color: #ff9900;
+    border: none;
+    text-align: center;
+    margin-left:30% ;
+    align-items: center;
     margin-top: 1vh;
-    margin-left: 80px;
-
+    padding: 10px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    position: relative;
+    border-radius: 10px;
 }
 .otp-btn>button{
     padding: 10px;
     text-transform: uppercase;
+    position: relative;
+}
+.resend{
+    margin-top: 1vh;
+    width: fit-content;
+    justify-content: center;
+    border-width: auto;
+    color: white;
+    display: flex;
+    text-transform: capitalize;
+    cursor: pointer;
+    border: 1px solid #ff9900;
+    padding :5px;
+    background-color: #ff9900;
+    border-radius: 10px;
 }
 
 .group_0{
-    margin-top: 44vh;
+    margin-top: 40vh;
+    position: relative;
 }
 .form-group_0{
     display:flex;
     flex-direction:column;
-    width:75%;
+    /* width:75%; */
 }
 
 .control_0{

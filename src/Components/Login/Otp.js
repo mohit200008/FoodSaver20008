@@ -2,7 +2,7 @@
 import './Login.css'
 import back from '../Assets/background.svg'
 import { Link } from 'react-router-dom'
-import React, { Components } from 'react'
+import React from 'react'
 import OtpInput from 'react-otp-input';
 
 function Login() {
@@ -15,7 +15,7 @@ function Login() {
         <div className="signin">
 
             <div className="signin-container">
-                <div className="signin-header">
+                <div className="signin-header_1">
                     <h3 className='acc'>Welcome Back</h3>
 
                     <p>Please Sign In to Continue</p>
@@ -24,20 +24,22 @@ function Login() {
                 <div className="signin-form">
                     <form className='group'>
                         <div className="form-group">
-                            <input type="email" className="control" id="email" placeholder="Email" />
-                        </div>
-                        <div className="form-group">
                             <OtpInput className='otp'
                                 // value={this.state.otp}
                                 // onChange={this.handleChange}
                                 value={126578}  //hardcoded
                                 onChange={0}
                                 numInputs={6}
-                                separator={<span>-</span>}
+                                // separator={<span>-</span>}
                             />
-                            {/* <input type="otp" className="control" id="password" placeholder="Otp" /> */}
                         </div>
+                        <div className='bttn'>
                         <button className='otp-btn'>Send otp</button>
+                        <button className='otp-btn'>SignIn</button>
+                        
+                        
+                        {/* <button className='resend'>Resend OTP</button> */}
+                        </div>
                     </form>
                 </div>
                 <div className='here'><Link to='/login'>Login with Password</Link></div>
