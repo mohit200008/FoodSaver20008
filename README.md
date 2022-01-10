@@ -1,32 +1,26 @@
 # FoodSaver
 About 6% of global greenhouse gas emissions is produced due to wastage of food. This cause global warming, harm environment, wastage of food (which can be feed to poor), wastage of resources, and wastage of money. FoodSaver is a web application that keep track of the food in your house, or restaurant and keep warning you to use the product before it got expire and got waste.
 
-## Video Demo Link
-The video demo can be viewed from [here](https://youtu.be/1QqRlR_8TgM)
-
-## Presentation Link
-The presentation can be viewed from [here](https://onedrive.live.com/edit.aspx?resid=2C1DBFC36D3E5AD3!113&ithint=file%2cpptx&authkey=!AMApCqmo-QSfn-c)
-
 ## Screenshots
 Home page
 
-![Picture1](https://user-images.githubusercontent.com/64153988/112748823-0be3fd00-8fdc-11eb-8d57-d46d6c2dc83f.png)
+![Picture1](public/img/home-page.png)
 
 Add food item
 
-![Picture3](https://user-images.githubusercontent.com/64153988/112748821-0a1a3980-8fdc-11eb-8cfb-9f6167e7976a.png)
+![Picture3](public/img/addfood.png)
 
 Recipe Suggestion
 
-![Picture2](https://user-images.githubusercontent.com/64153988/112748824-0be3fd00-8fdc-11eb-9dbb-58709d796b97.png)
+![Picture2](public/img/recipe-page.png)
 
 Available in Multiple Languages
 
-![Picture4](https://user-images.githubusercontent.com/64153988/112748822-0b4b6680-8fdc-11eb-80fe-c78485af86ae.png)
+![Picture4](public/img/languages.png)
 
 Smart Chatbot
 
-![chatbot](https://user-images.githubusercontent.com/64153988/112748926-b9efa700-8fdc-11eb-8f70-ae36142c6c0b.png)
+![chatbot](public/img/chat-box.png)
 
 
 ## Main Features
@@ -68,7 +62,7 @@ Required to install and run the software:
 From the project folder, run these commands in console (terminal) to install dependencies and run the app:
 ```
 1. npm install
-2. npm run dev
+2. npm start
 ```
 
 # 💥 How to Contribute
