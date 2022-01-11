@@ -14,7 +14,7 @@ const NavBar=({ logOut }) =>{
       <Nav.Link href="/food" className="nav-link">Add food</Nav.Link>
       <Nav.Link href="/recipepage" className="nav-link">Recipe</Nav.Link>
 
-      <Nav.Link href="/craetivity" className="nav-link">Creativity</Nav.Link>
+      <Nav.Link href="/creativity" className="nav-link">Creativity</Nav.Link>
       <Nav.Link href="/login" className="nav-link">Login</Nav.Link>
 
       <Nav.Link href="/hi"  className="nav-link">अ/A</Nav.Link>

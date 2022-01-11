@@ -2,13 +2,13 @@
 import './Login.css'
 import back from '../Assets/background.svg'
 import { Link } from 'react-router-dom'
-import React from 'react'
-import OtpInput from 'react-otp-input';
+import React,{useState} from 'react'
+import OtpInput from 'otp-input-react';
 
 function Login() {
-    //     state = { otp: '' };
-
-    //   handleChange = (otp) => this.setState({ otp });
+         //state = { otp: '' };
+const [otp,setotp] = useState('')
+      function handleChange (otp) {setotp({ otp });}
     return (
 
 
@@ -25,12 +25,14 @@ function Login() {
                     <form className='group'>
                         <div className="form-group">
                             <OtpInput className='otp'
-                                // value={this.state.otp}
-                                // onChange={this.handleChange}
-                                value={126578}  //hardcoded
-                                onChange={0}
-                                numInputs={6}
-                                // separator={<span>-</span>}
+                                value={otp}
+                                onChange={setotp}
+                                autoFocus
+                                OTPLength={4}
+                                 otpType="number" 
+                                 disabled={false}
+                                secure
+                                
                             />
                         </div>
                         <div className='bttn'>
