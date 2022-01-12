@@ -2,9 +2,9 @@
 .signin,
 .signup{
     
-    height: 500px;
+    height: 580px;
     left: calc(50% - 500px/2 - 19px);
-    top: calc(50% - 850px/2);
+    top: calc(50% - 990px/2);
     background: rgba(196, 196, 196, 0.54);
     border-radius: 30px;
     box-shadow: 0px 0px 10px 0px #888888;
@@ -66,7 +66,7 @@
 
 }
 .acc{
-    font-size: 4rem;
+    font-size: 3rem;
     margin-top: 30px;
 }
 h3{
@@ -102,11 +102,11 @@ h3{
     flex-direction:column;
 }
 .group_1{
-    margin-top:40vh;
+    margin-top:32vh;
     color: rgba(62, 51, 51, 1);
 }
 .group{
-    margin-top: 48vh;
+    margin-top: 42vh;
     
 }
 .form-control_1{
@@ -135,7 +135,7 @@ h3{
 .comp{
     z-index: -1;
     margin-left: -350px;
-    margin-top: -60vh;
+    margin-top: -55vh;
 }
 ::placeholder{
     color: linear-gradient(0deg, #3E3333, #3E3333),
@@ -164,6 +164,7 @@ h3{
     align-items: center;
     width: 60px;
     font-size: 22px;
+    margin-left: 30px;
 }
 .bttn{
     display: flex;
@@ -238,7 +239,7 @@ input{
 }
 
 .group_0{
-    margin-top: 40vh;
+    margin-top: 38vh;
     position: relative;
 }
 .form-group_0{
