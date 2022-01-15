@@ -1,10 +1,10 @@
 .nav-link
 {
-    color:#9FFFCB !important;
+    color:#7cd3a3 !important;
 }
 .nav-link:hover,
 .nav-link:active {
   border-bottom: 2px solid #9FFFCB;
   transform: scale(1.1);
-  color: white !important;
+  color: rgb(231, 240, 150) !important;
 }
