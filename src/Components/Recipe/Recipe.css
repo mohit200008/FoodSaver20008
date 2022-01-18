@@ -94,7 +94,7 @@ h1 {
 }
 
 .recipe {
-  width: 10rem;
+  width: 17rem;
   margin: 3rem;
   display: flex;
   flex-direction: column;
@@ -113,7 +113,7 @@ h1 {
   top: 2.5rem;
   left: 2.5rem;
   right: 2.5rem;
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 400;
   text-shadow: 0 0.5rem 0.5rem #555;
   color: #fff;
@@ -125,12 +125,12 @@ h1 {
 }
 
 .recipe a {
-  font-size: 1.0rem;
+  font-size: 1.4rem;
   color: #40b48e;
 }
 
 .recipe button {
-  font-size: 1rem;
+  font-size: 1.2rem;
   text-transform: uppercase;
   color: #fff;
   background-color: #40b48e;
@@ -151,7 +151,7 @@ h1 {
 }
 
 .ingredient-text {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: #888;
 }
 
