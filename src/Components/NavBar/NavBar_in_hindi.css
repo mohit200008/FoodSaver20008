@@ -1,0 +1,15 @@
+.nav-link
+{
+    color:#7cd3a3 !important;
+}
+.nav-link:hover,
+.nav-link:active {
+  border-bottom: 2px solid #9FFFCB;
+  transform: scale(1.1);
+  color: rgb(231, 240, 150) !important;
+}
+
+/* hindi content */
+.mr-auto{
+    margin-right: -5%;
+}
