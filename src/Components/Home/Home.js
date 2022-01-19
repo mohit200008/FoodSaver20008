@@ -12,6 +12,10 @@ import Signup from '../Login/Signup'
 import Otp from '../Login/Otp'
 import './Home.css'
 
+//hindi content
+import HomeinHindi from "../Home/HomeinHindi"
+import NavBar_in_Hindi from "../NavBar/NavBar_in_Hindi"
+
 export default class Home extends Component {
     render() {
         return (
@@ -28,6 +32,13 @@ export default class Home extends Component {
                         <Route exact path='/login' component={Login} />
                         <Route exact path='/signup' component={Signup} />
                         <Route exact path='/otp' component={Otp} />
+
+                       {/* hindi content */}
+
+                        <Route exact path='/homeinhindi' render={(props) => <HomeinHindi {...this.props} />} />
+                        <Route exact path='/navinhindi' element={<NavBar_in_Hindi/>} />
+
+
 
                        </div>
                     </div>
