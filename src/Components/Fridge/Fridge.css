@@ -75,9 +75,23 @@
     padding: 10px;
     transition: 0.6s;
     border-radius: 20px;
+    margin: 10px;
 }
 .new-food-form-submit-button:hover{
     background:rgba(12, 255, 239, 0.8) ;
+    cursor: pointer;
+}
+.new-food-form-cancel-button{
+    background: rgb(255, 99, 99);
+    border: none;
+    box-shadow: 0px 0px 10px 0px #888888;
+    padding: 10px;
+    transition: 0.6s;
+    border-radius: 20px;
+    margin: 10px;
+}
+.new-food-form-cancel-button:hover{
+    background:rgb(249, 39, 39) ;
     cursor: pointer;
 }
 
