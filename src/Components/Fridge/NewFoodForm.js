@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const NewFoodForm = (props) => {
+const NewFoodForm = ({ addFood, toggleFoodForm }) => {
   const statee = {
     food_name: '',
     expiration_date: '',
@@ -20,7 +20,6 @@ const NewFoodForm = (props) => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    const { addFood, toggleFoodForm } = props;
     addFood(state_);
     toggleFoodForm();
     setState_({
@@ -32,6 +31,11 @@ const NewFoodForm = (props) => {
       food_category: '',
     });
   };
+
+  const handleCancel = (event) => {
+    event.preventDefault();
+    toggleFoodForm();
+  }
 
   const {
     food_name,
@@ -113,6 +117,12 @@ const NewFoodForm = (props) => {
           type="submit"
           value="Submit"
         />
+        <button
+          onClick={handleCancel}
+          className="new-food-form-cancel-button"
+        >
+          cancel
+          </button>
       </form>
     </>
   );
