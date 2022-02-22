@@ -103,6 +103,7 @@ h1 {
   position: relative;
   border-radius: 0.5rem;
   box-shadow: 2rem 3rem 5rem #aaa;
+  text-align: center;
 }
 
 .recipe h2 {
@@ -137,6 +138,7 @@ h1 {
   border: none;
   border-radius: 0.5rem;
   height: 3rem;
+  margin-top: 10px;
 }
 
 .ingredient-list {
