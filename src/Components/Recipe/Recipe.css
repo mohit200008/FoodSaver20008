@@ -44,16 +44,16 @@ h1 {
 
 .alert {
   position: absolute;
-  top: -3rem;
-  left: 0;
+  top: 0rem;
+  left: 0rem;
   background-color: rgb(233, 72, 72);
-  width: calc(100% - 0.4rem);
+  width: calc(100% - 40.4rem);
   border-radius: 0.5rem;
-  padding: 0.2rem;
+  padding: 0rem 0rem;
 }
 
 .alert h3 {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   color: #fff;
   font-weight: 400;
   text-transform: uppercase;
@@ -99,7 +99,7 @@ h1 {
   display: flex;
   flex-direction: column;
   background-color: #d3d3d3;
-  padding: 2rem;
+  padding: 1.8rem;
   position: relative;
   border-radius: 0.5rem;
   box-shadow: 2rem 3rem 5rem #aaa;
@@ -109,12 +109,12 @@ h1 {
 .recipe h2 {
   background-color: rgba(161, 161, 161, 0.7);
   border-radius: 0.5rem;
-  padding: 0.3rem 0.5rem;
+  padding: 0.3rem 0.2rem;
   position: absolute;
   top: 2.5rem;
   left: 2.5rem;
   right: 2.5rem;
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-weight: 400;
   text-shadow: 0 0.5rem 0.5rem #555;
   color: #fff;
@@ -160,4 +160,366 @@ h1 {
 .ingredient-weight {
   color: #40b48e;
   font-size: 1.3rem;
+}
+
+@media screen and (max-width: 411px) {
+  .search-form {
+    margin-top: 40px;
+    width: 20rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* gap: 50px; */
+    background-color: #d3d3d3;
+    border-radius: 0.5rem;
+    margin-bottom: 0.4rem;
+    box-shadow: 1rem 1rem 5rem #aaa;
+    position: relative;
+  }
+  .search-form input[type="text"]{
+    text-align: center;
+    font-size: 15px;
+    border: none;
+    border-bottom: 0.1rem solid #ccc;
+    margin: 0 1.5rem;
+    border-radius: 0.5rem;
+    height: 1.8rem;
+    padding: 0 0.5rem;
+    width: 50%;
+    color: #555;
+  }
+  .search-form input[type="submit"] {
+    height: 2rem;
+    font-size: 15px;
+    width: 35%;
+    text-transform: uppercase;
+    background-color: #40b48e;
+    color: #fff;
+  }
+  .recipe {
+    width: 8.5rem;
+    margin: 1rem 0.4rem;
+    display: flex;
+    flex-direction: column;
+    background-color: #d3d3d3;
+    padding: 0.7rem 0.7rem;
+    position: relative;
+    border-radius: 0.5rem;
+    box-shadow: 1rem 1rem 1.5rem #aaa;
+    text-align: center;
+  }
+  .recipe h2 {
+    background-color: rgba(161, 161, 161, 0.7);
+    border-radius: 0.2rem;
+    padding: 0.3rem 0.1rem;
+    position: absolute;
+    top: 1rem;
+    left: 1.7rem;
+    right: 1.7rem;
+    font-size: 0.6rem;
+    font-weight: 400;
+    text-shadow: 0 0.5rem 0.5rem #555;
+    color: #fff;
+  }
+  .recipe img {
+    border-radius: 0.5rem;
+    object-fit: cover;
+  }
+  
+  .recipe a {
+    font-size: 1.4rem;
+    color: #40b48e;
+  }
+  
+  .recipe button {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #40b48e;
+    border: none;
+    border-radius: 0.5rem;
+    height: 2rem;
+    margin-top: 6px;
+  }
+  .ingredient-list {
+    margin-top: 1rem;
+    background-color: #f0f0f0;
+    border-radius: 0.5rem;
+    padding: 0.3rem;
+  }
+  
+  .ingredient-list li {
+    margin: 0.3rem 0;
+  }
+  
+  .ingredient-text {
+    font-size: 0.8rem;
+    color: #888;
+  }
+  
+  .ingredient-weight {
+    color: #40b48e;
+    font-size: 0.8rem;
+  }
+  .alert {
+    position: absolute;
+    top: 2rem;
+    left: 0rem;
+    background-color: rgb(233, 72, 72);
+    width: calc(100% - 5.4rem);
+    border-radius: 0.5rem;
+    padding: 0rem 0rem;
+  }
+  
+  .alert h3 {
+    font-size: 1rem;
+    color: #fff;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 411px) and (max-width: 550px) {
+  .search-form {
+    margin-top: 40px;
+    width: 20rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* gap: 50px; */
+    background-color: #d3d3d3;
+    border-radius: 0.5rem;
+    margin-bottom: 0.4rem;
+    box-shadow: 1rem 1rem 5rem #aaa;
+    position: relative;
+  }
+  .search-form input[type="text"]{
+    text-align: center;
+    font-size: 15px;
+    border: none;
+    border-bottom: 0.1rem solid #ccc;
+    margin: 0 1.5rem;
+    border-radius: 0.5rem;
+    height: 1.8rem;
+    padding: 0 0.5rem;
+    width: 50%;
+    color: #555;
+  }
+  .search-form input[type="submit"] {
+    height: 2rem;
+    font-size: 15px;
+    width: 35%;
+    text-transform: uppercase;
+    background-color: #40b48e;
+    color: #fff;
+  }
+  .recipe {
+    width: 10rem;
+    margin: 1rem 0.6rem;
+    display: flex;
+    flex-direction: column;
+    background-color: #d3d3d3;
+    padding: 1rem 1rem;
+    position: relative;
+    border-radius: 0.5rem;
+    box-shadow: 1rem 1rem 1.5rem #aaa;
+    text-align: center;
+  }
+  .recipe h2 {
+    background-color: rgba(161, 161, 161, 0.7);
+    border-radius: 0.5rem;
+    padding: 0.3rem 0.1rem;
+    position: absolute;
+    top: 1.5rem;
+    left: 2.5rem;
+    right: 2.5rem;
+    font-size: 0.7rem;
+    font-weight: 400;
+    text-shadow: 0 0.5rem 0.5rem #555;
+    color: #fff;
+  }
+  .recipe img {
+    border-radius: 0.5rem;
+    object-fit: cover;
+  }
+  
+  .recipe a {
+    font-size: 1.4rem;
+    color: #40b48e;
+  }
+  
+  .recipe button {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #40b48e;
+    border: none;
+    border-radius: 0.5rem;
+    height: 2rem;
+    margin-top: 10px;
+  }
+  .ingredient-list {
+    margin-top: 1rem;
+    background-color: #f0f0f0;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+  }
+  
+  .ingredient-list li {
+    margin: 0.3rem 0;
+  }
+  
+  .ingredient-text {
+    font-size: 0.8rem;
+    color: #888;
+  }
+  
+  .ingredient-weight {
+    color: #40b48e;
+    font-size: 1rem;
+  }
+  .alert {
+    position: absolute;
+    top: 2rem;
+    left: 0rem;
+    background-color: rgb(233, 72, 72);
+    width: calc(100% - 10.4rem);
+    border-radius: 0.5rem;
+    padding: 0rem 0rem;
+  }
+  
+  .alert h3 {
+    font-size: 1.2rem;
+    color: #fff;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 550px) and (max-width: 940px) {
+  .search-form {
+    margin-top: 40px;
+    width: 26rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* gap: 50px; */
+    background-color: #d3d3d3;
+    border-radius: 0.5rem;
+    margin-bottom: 0.4rem;
+    box-shadow: 1rem 1rem 5rem #aaa;
+    position: relative;
+  }
+  .search-form input[type="text"]{
+    text-align: center;
+    font-size: 13px;
+    border: none;
+    border-bottom: 0.1rem solid #ccc;
+    margin: 0 1.5rem;
+    border-radius: 0.5rem;
+    height: 1.8rem;
+    padding: 0.4 0.5rem;
+    width: 60%;
+    color: #555;
+  }
+  .search-form input[type="submit"] {
+    height: 2rem;
+    font-size: 15px;
+    width: 19%;
+    text-transform: uppercase;
+    background-color: #40b48e;
+    color: #fff;
+  }
+  .recipes {
+    width: 100%;
+  }
+  .recipe {
+    width: 14rem;
+    margin: 3rem 1rem;
+    display: flex;
+    flex-direction: column;
+    background-color: #d3d3d3;
+    padding: 1.2rem;
+    position: relative;
+    border-radius: 0.5rem;
+    box-shadow: 2rem 2rem 3.5rem #aaa;
+    text-align: center;
+  }
+  
+  .recipe h2 {
+    background-color: rgba(161, 161, 161, 0.7);
+    border-radius: 0.5rem;
+    padding: 0.3rem 0.2rem;
+    position: absolute;
+    top: 1.5rem;
+    left: 2.5rem;
+    right: 2.5rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-shadow: 0 0.5rem 0.5rem #555;
+    color: #fff;
+  }
+  
+  .recipe img {
+    border-radius: 0.5rem;
+    object-fit: cover;
+  }
+  
+  .recipe a {
+    font-size: 1.4rem;
+    color: #40b48e;
+  }
+  
+  .recipe button {
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #40b48e;
+    border: none;
+    border-radius: 0.5rem;
+    height: 2.5rem;
+    margin-top: 10px;
+  }
+  .ingredient-list {
+    margin-top: 1rem;
+    background-color: #f0f0f0;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+  }
+  
+  .ingredient-list li {
+    margin: 0.3rem 0;
+  }
+  
+  .ingredient-text {
+    font-size: 1rem;
+    color: #888;
+  }
+  
+  .ingredient-weight {
+    color: #40b48e;
+    font-size: 1.1rem;
+  }
+  .alert {
+    position: absolute;
+    top: 2rem;
+    left: 0rem;
+    background-color: rgb(233, 72, 72);
+    width: calc(100% - 20.4rem);
+    border-radius: 0.5rem;
+    padding: 0rem 0rem;
+  }
+  
+  .alert h3 {
+    font-size: 1.2rem;
+    color: #fff;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+  }
 }

@@ -6,7 +6,7 @@ function Signup(){
         <div className='signup'>
             <div className='signup-container'>
                 <div className='signup-header'>
-               <h3 className='acc'>Create Account</h3>
+                    <h3 className='acc'>Create Account</h3>
                     <p>Please SignUp To Continue</p>
                 </div>
                 <div className='signup-form'>

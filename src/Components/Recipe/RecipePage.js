@@ -40,7 +40,7 @@ function RecipePage() {
   return (
     <div className="App">
       <form onSubmit={onSubmit} className="search-form">
-        {alert !== "" && <Alert alert={alert} />}
+        
         <input
           type="text"
           name="query"
@@ -51,6 +51,7 @@ function RecipePage() {
         />
         <input type="submit" value="Search" />
       </form>
+      {alert !== "" && <Alert alert={alert} />}
       <div className="recipes">
         {recipes !== [] &&
           recipes.map(recipe => <Recipe key={uuidv4()} recipe={recipe} />)}

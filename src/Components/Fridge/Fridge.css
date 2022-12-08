@@ -220,3 +220,80 @@
 .header-green {
     background-color: rgb(133, 185, 72);
 }
+
+@media screen and (max-width: 550px) {
+    .fridge-container{
+        width: 100%;
+    }
+    .fridge-title{
+        text-align: center;
+        margin: 0;
+        margin-top: 1rem;
+        font-size: 2rem;
+    }
+    .add-food-button {
+        width: 7rem;
+        height: 3.7rem;
+        font-size: 1rem;
+        background-color: rgba(255, 255, 255, 0);
+        border-radius: 1rem;
+        border: 1px black solid;
+        margin-top: 2rem;
+        margin-left: 1rem;
+        margin-right: 4rem;
+        cursor: pointer;
+        box-shadow: 5px 5px 5px lightgrey;
+    }
+
+    .food-form-element, .new-food-form-submit-button, .new-food-form-cancel-button {
+        width: 300px;
+    }
+    .new-food-form {
+        /* display: flex;
+        flex-direction: column; */
+        /* padding: 20px 20px; */
+        /* width: fit-content; */
+        width: 100%;
+        display: grid;
+        grid-template-columns: 330px;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        border-radius: 30px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        background: #EAFFFE;
+    }
+}
+@media only screen and (min-width: 550px) and (max-width: 1000px) {
+    .food-form-element, .new-food-form-submit-button, .new-food-form-cancel-button {
+        width: 500px;
+    }
+    .new-food-form {
+        /* display: flex;
+        flex-direction: column; */
+        /* padding: 20px 20px; */
+        /* width: fit-content; */
+        width: 100%;
+        display: grid;
+        grid-template-columns: 500px;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        border-radius: 30px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        background: #EAFFFE;
+    }
+    .add-food-button {
+        width: 9rem;
+        height: 5.7rem;
+        font-size: 1.5rem;
+        background-color: rgba(255, 255, 255, 0);
+        border-radius: 1rem;
+        border: 1px black solid;
+        margin-top: 2rem;
+        margin-left: 18%;
+        margin-right: 4rem;
+        cursor: pointer;
+        box-shadow: 5px 5px 5px lightgrey;
+    }
+}
