@@ -13,7 +13,13 @@ const Recipe = ({ recipe }) => {
       <img src={image} alt={label} style={{maxWidth:"100%"}}  />
       </a>
       <button onClick={() => setShow(!show)}>Ingredients</button>
-      {show && <RecipeDetails ingredients={ingredients} />}
+      {show && <div className="ingredient-container">
+        <span className="close-btn" onClick={() => { setShow(false) }}>x</span>
+        <span className="ingredient-container__recipe-name">{label}</span>
+        <br />
+        <span className="ingredient-container__header">List of Ingredients: </span>
+        <RecipeDetails ingredients={ingredients} />
+      </div>}
     </div>
   );
 };
