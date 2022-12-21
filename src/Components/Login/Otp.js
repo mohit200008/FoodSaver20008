@@ -36,11 +36,11 @@ const [otp,setotp] = useState('')
                             />
                         </div>
                         <div className='bttn'>
-                        <button className='otp-btn'>Send otp</button>
-                        <button className='otp-btn'>SignIn</button>
-                        
-                        
-                        {/* <button className='resend'>Resend OTP</button> */}
+                            <button className='otp-btn'>Send otp</button>
+                            <button className='otp-btn'>SignIn</button>
+                            
+                            
+                            {/* <button className='resend'>Resend OTP</button> */}
                         </div>
                     </form>
                 </div>

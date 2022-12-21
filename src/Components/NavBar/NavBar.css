@@ -8,3 +8,47 @@
   transform: scale(1.1);
   color: rgb(231, 240, 150) !important;
 }
+
+@media screen and (max-width: 550px) {
+  /* a.nav-link{
+    display: none;
+  }
+  .dropdown-menu{
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+  } */
+  a.brand{
+    font-size: 15px;
+  }
+  a.nav-link{
+    font-size: 10px;
+    padding: 5px 5px;
+  }
+  .nav-link:hover,
+.nav-link:active {
+  border-bottom: 2px solid #9FFFCB;
+  transform: scale(1.1);
+  color: rgb(231, 240, 150) !important;
+}
+}
+
+@media screen and (min-width: 550px) and (max-width: 1200px){
+  
+}
+
+@media only screen and (min-width: 1200px){
+  a.brand{
+    font-size: 30px;
+  }
+  a.nav-link{
+    font-size: 20px;
+    padding: 5px 10px;
+  }
+  .nav-link:hover,
+.nav-link:active {
+  border-bottom: 2px solid #9FFFCB;
+  transform: scale(1.1);
+  color: rgb(231, 240, 150) !important;
+}
+}

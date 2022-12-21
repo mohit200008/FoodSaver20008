@@ -14,6 +14,7 @@ const Recipe = ({ recipe }) => {
       </a>
       <button onClick={() => setShow(!show)}>Ingredients</button>
 
+
       {show && <div className="ingredient-container">
         <span className="close-btn" onClick={() => { setShow(false) }}>x</span>
         <span className="ingredient-container__recipe-name">{label}</span>

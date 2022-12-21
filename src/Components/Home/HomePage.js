@@ -29,95 +29,82 @@ export default function HomePage({ foods }) {
     }
 
     return (
-        <div >
+        <div>
             <div className='home-page-container slides'>
                 <div className='home-page-food-count-container '>
-                    <h3 className='home-page-food-count-message'><span className='message'>Items at</span> Home</h3>
-                    <Carousel className='carousels'>
-  <Carousel.Item interval={1000}>
-    <img
-      className="d-block w-100"
-      src={image1}
-      alt="First slide"
-    />
-    <Carousel.Caption>
-     
-    </Carousel.Caption>
-  </Carousel.Item>
-  <Carousel.Item interval={500}>
-    <img
-      className="d-block w-100"
-      src={image2}
-      alt="Second slide"
-    />
-    <Carousel.Caption>
-     
-    </Carousel.Caption>
-  </Carousel.Item>
-  <Carousel.Item>
-    <img
-      className="d-block w-100"
-      src={image3}
-      alt="Third slide"
-    />
-    <Carousel.Caption>
-     
-    </Carousel.Caption>
-              </Carousel.Item>
-              <Carousel.Item>
-              <img
-                className="d-block w-100"
-                src={image4}
-                alt="fourth slide"
-              />
-              <Carousel.Caption>
+                    <h3 className='home-page-food-count-message msg1'><span className='message'>Items at</span> Home</h3>
+                    <div className="slideshow-container">
+                        <Carousel className='carousels'>
+                            <Carousel.Item interval={1000}>
+                                <img
+                                className="d-block w-100"
+                                src={image1}
+                                alt="First slide"
+                                />
+                                <Carousel.Caption>
+                                
+                                </Carousel.Caption>
+                            </Carousel.Item>
+                            <Carousel.Item interval={500}>
+                                <img
+                                className="d-block w-100"
+                                src={image2}
+                                alt="Second slide"
+                                />
+                                <Carousel.Caption>
+                                
+                                </Carousel.Caption>
+                            </Carousel.Item>
+                            <Carousel.Item>
+                                <img
+                                className="d-block w-100"
+                                src={image3}
+                                alt="Third slide"
+                                />
+                                <Carousel.Caption>
+                                
+                                </Carousel.Caption>
+                            </Carousel.Item>
+                            <Carousel.Item>
+                                <img
+                                className="d-block w-100"
+                                src={image4}
+                                alt="fourth slide"
+                                />
+                                <Carousel.Caption>
+                                
+                                </Carousel.Caption>
+                            </Carousel.Item>
+                        </Carousel>
+                    </div>
+                    
+                    <div>
+                        <div className='home-page-container '>
                
-              </Carousel.Caption>
-            </Carousel.Item>
-            </Carousel>
-            <div>
-            <div className='home-page-container'>
-               
-                <div className=''>
-                    <h3 className='home-page-food-count-message'>Food About To Expire</h3>
+                            <div className=''>
+                                <h3 className='home-page-food-count-message msg2'>Food About To Expire</h3>
                     
                   
-                    <div className="home-page-card-container">
-                       <div className='home-page-cards'>
-
-    
-                             <h3 className='expiration-number high'>{aboutToExpire(foods).high}</h3>
-                             <h3 className='expiration-message'>After 7 days</h3>
-                            
-                    
-                     </div>
+                                <div className="home-page-card-container expire-content">
+                                    <div className='home-page-cards'>
+                                        <h3 className='expiration-number high'>{aboutToExpire(foods).high}</h3>
+                                        <h3 className='expiration-message'>After 7 days</h3>
+                                    </div>
    
-
-                        <div className='home-page-cards'>
-                            <h3 className='expiration-number medium'>{aboutToExpire(foods).medium}</h3>
-                            <h3 className='expiration-message'>Between 4 to 7 days</h3>
+                                    <div className='home-page-cards'>
+                                        <h3 className='expiration-number medium'>{aboutToExpire(foods).medium}</h3>
+                                        <h3 className='expiration-message'>Between 4 to 7 days</h3>
+                                    </div>
+                        
+                                    <div className='home-page-cards'>
+                                        <h3 className='expiration-number low'>{aboutToExpire(foods).low}</h3>
+                                        <h3 className='expiration-message'> Under 3 days</h3>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                   
-                        <div className='home-page-cards'>
-                            <h3 className='expiration-number low'>{aboutToExpire(foods).low}</h3>
-                            <h3 className='expiration-message'> Under 3 days</h3>
-                        </div>
-                   </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-
-
-
-
-
-
-                   
-                </div>
-                
-                  
-
-              
             </div>
         </div>
     )
