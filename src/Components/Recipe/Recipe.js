@@ -3,7 +3,7 @@ import RecipeDetails from "./RecipeDetails";
 
 const Recipe = ({ recipe }) => {
   const [show, setShow] = useState(false);
-  const { label, image, url, ingredients } = recipe.recipe;
+  const { label, image, url, ingredients, mealType, dishType, calories, cuisineType, totalNutrients } = recipe.recipe;
   console.log(recipe);
   return (
     <div className="recipe">
@@ -20,7 +20,7 @@ const Recipe = ({ recipe }) => {
         <span className="ingredient-container__recipe-name">{label}</span>
         <br />
         <span className="ingredient-container__header">List of Ingredients: </span>
-        <RecipeDetails ingredients={ingredients} />
+        <RecipeDetails ingredients={ingredients} mealType={mealType} dishType={dishType} calories={calories} cuisineType={cuisineType} totalNutrients={totalNutrients} />
       </div>}
     </div>
   );
