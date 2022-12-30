@@ -214,6 +214,15 @@ h1 {
   color: #40b48e;
   font-size: 1.3rem;
 }
+/* .more{
+  padding: 5px 15px;
+  font-size: 18px;
+  margin-bottom: 20px;
+  background-color: #40b48e;
+  border-radius: 7px;
+  color: #fff;
+  cursor: pointer;
+} */
 
 @media screen and (max-width: 411px) {
   .search-form {
