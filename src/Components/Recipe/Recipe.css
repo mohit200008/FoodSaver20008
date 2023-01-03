@@ -223,8 +223,45 @@ h1 {
   color: #fff;
   cursor: pointer;
 } */
+.servings{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 100px;
+  left: 230px;
+  background: rgba(194, 194, 194, 0.5);
+  border-radius: 10px;
+  padding: 2px 5px;
+}
+.serve-no{
+  color: black;
+}
+.serve-icon{
+  width: 30px;
+  height: 30px;
+}
 
 @media screen and (max-width: 411px) {
+  .servings{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 53px;
+    left: 83px;
+    background: rgba(194, 194, 194, 0.7);
+    border-radius: 10px;
+    padding: 2px 5px;
+  }
+  .serve-no{
+    color: black;
+    font-size: 18px;
+  }
+  .serve-icon{
+    width: 20px;
+    height: 20px;
+  }
   .search-form {
     margin-top: 40px;
     width: 20rem;
@@ -358,6 +395,25 @@ h1 {
 }
 
 @media screen and (min-width: 411px) and (max-width: 550px) {
+  .servings{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 63px;
+    left: 100px;
+    background: rgba(194, 194, 194, 0.7);
+    border-radius: 10px;
+    padding: 2px 5px;
+  }
+  .serve-no{
+    color: black;
+    font-size: 18px;
+  }
+  .serve-icon{
+    width: 20px;
+    height: 20px;
+  }
   .search-form {
     margin-top: 40px;
     width: 20rem;
@@ -489,6 +545,25 @@ h1 {
 }
 
 @media screen and (min-width: 550px) and (max-width: 940px) {
+  .servings{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 75px;
+    left: 155px;
+    background: rgba(194, 194, 194, 0.7);
+    border-radius: 10px;
+    padding: 2px 5px;
+  }
+  .serve-no{
+    color: black;
+    font-size: 22px;
+  }
+  .serve-icon{
+    width: 25px;
+    height: 25px;
+  }
   .search-form {
     margin-top: 40px;
     width: 26rem;
