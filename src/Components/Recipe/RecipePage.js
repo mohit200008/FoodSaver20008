@@ -9,7 +9,7 @@ function RecipePage() {
   const [query, setQuery] = useState("");
   const [recipes, setRecipes] = useState([]);
   const [alert, setAlert] = useState("");
-  // const [more, setMore] = useState(false);
+  const [more, setMore] = useState(false);
 
   const APP_ID = process.env.REACT_APP_APP_ID;
   const APP_KEY = process.env.REACT_APP_APP_KEY;
@@ -24,27 +24,27 @@ function RecipePage() {
       }
       console.log(result);
       setRecipes(result.data.hits);
-      // setMore(true);
-      setQuery("");
+      setMore(true);
+      // setQuery("");
       setAlert("");
     } else {
       setAlert("Please fill the form");
     }
   };
 
-  // const getMore = async () => {
-  //   var c=10;
-  //   const url2 = `https://api.edamam.com/search?q=${query}&app_id=${APP_ID}&app_key=${APP_KEY}&to=${c}`;
-  //   const result = await Axios.get(url2);
-  //     if (!result.data.more) {
-  //       return setAlert("No food with such name");
-  //     }
-  //     console.log(result);
-  //     setRecipes(result.data.hits);
-  //     setMore(true);
-  //     // setQuery("");
-  //     setAlert("");
-  // }
+  const getMore = async () => {
+    const url2 = `https://api.edamam.com/search?q=${query}&app_id=${APP_ID}&app_key=${APP_KEY}&to=${recipes.length+10}`;
+
+    const result = await Axios.get(url2);
+    if (!result.data.more) {
+      return setAlert("No food with such name");
+    }
+    console.log(result);
+    setRecipes(result.data.hits);
+    setMore(true);
+    // setQuery("");
+    setAlert("");
+  }
 
   const onChange = e => setQuery(e.target.value);
 
@@ -72,12 +72,10 @@ function RecipePage() {
         {recipes !== [] &&
           recipes.map(recipe => <Recipe key={uuidv4()} recipe={recipe} />)}
       </div>
-      {/* {
+      {
         more && 
-        <form action="" onSubmit={getMore()}>
-          <input className="more" type="submit" value="See More"/>
-        </form>
-      } */}
+        <button className="more" onClick={getMore}>See More</button>
+      }
     </div>
   );
 }

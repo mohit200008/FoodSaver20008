@@ -5,7 +5,7 @@ import person from'../../Images/person.png';
 const Recipe = ({ recipe }) => {
   const [show, setShow] = useState(false);
   const { label, image, url, ingredients, mealType, dishType, calories, cuisineType, totalNutrients } = recipe.recipe;
-  console.log(recipe.recipe.yield);
+  // console.log(recipe.recipe.yield);
   return (
     <div className="recipe">
       <h2>{label}</h2>
