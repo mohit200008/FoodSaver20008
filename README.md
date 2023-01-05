@@ -120,9 +120,11 @@ git merge upstream/main
 
 ### [Github Docs](https://docs.github.com/en/github/collaborating-with-pull-requests/addressing-merge-conflicts/resolving-a-merge-conflict-on-github) for Syncing
 
-**7.** Make your changes to the source code.
+**7.** Create a .env file in the FoodSaver20008 folder and add your APP_ID and APP_KEY. You can get them from [here](https://www.edamam.com/). Take a look at the .env.sample file if you face any issues.
 
-**8.** Stage your changes and commit:
+**8.** Make your changes to the source code.
+
+**9.** Stage your changes and commit:
 
 ```bash
 git add .
@@ -132,15 +134,15 @@ git add .
 git commit -m "<your_commit_message>"
 ```
 
-**9.** Push your local commits to the remote repository:
+**10.** Push your local commits to the remote repository:
 
 ```bash
 git push origin YourBranchName
 ```
 
-**10.** Create a [Pull Request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request)!
+**11.** Create a [Pull Request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request)!
 
-**11.** **Congratulations!** You've made your first contribution! 🙌🏼
+**12.** **Congratulations!** You've made your first contribution! 🙌🏼
 
 
 
