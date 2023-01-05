@@ -6,7 +6,7 @@ const RecipeDetails = ({ ingredients, mealType, dishType, calories, cuisineType,
     key,
     totalNutrients[key],
   ]);
-  console.log(entries);
+  // console.log(entries);
   return (
     <div className="cont">
 
